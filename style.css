@@ -2,15 +2,25 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+div{
+    width:80%;
+    margin:auto;
 }
 
 header{
  width: 100%;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 3em;
 }
 
 nav{
- 
-
+    display: flex;
+    flex-direction: row;
+    
 }
 
 .nav-list {
@@ -20,3 +30,8 @@ nav{
     margin: 0;
     padding: 0;
   }
+
+.nav-item{
+    margin-right: 15px;
+    color: hsl(236, 13%, 42%);
+}
