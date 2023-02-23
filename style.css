@@ -21,6 +21,10 @@ header{
  margin-top: 3em;
 }
 
+a{
+    text-decoration: none;
+}
+
 nav{
     display: flex;
     flex-direction: row;
@@ -31,13 +35,19 @@ nav{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin-top: 1em;
+    font-size: 1rem;
+    
   }
 
 .nav-item{
-    margin-right: 1.5em;
+    margin-left: 2.2em;
     color: hsl(236, 13%, 42%);
+}
+
+.nav-item:hover{
+    color: hsl(5, 85%, 63%);
 }
 
 .content-container{
@@ -50,42 +60,52 @@ nav{
 .top-container{
 width:100%;
 margin-top: 3em;
-margin-bottom: 3em;
+margin-bottom: 3.5em;
 display: flex;
 flex-direction: row;
 }
 
 .main-article{
-     width:65%;
+     width:68%;
     margin-left: 0;
     margin-top:0;
+    display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .web-three-desktop{
     width:100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 1.5em;
 }
 
 #main-article-header{
-    width: 47%;
-    font-size: 3rem;
+    width: 40%;
+    font-size: 3.5rem;
     font-weight: bolder;
 }
 
-
+.main-article-content{
+    width: 40%;
+}
 
 #main-article-p{
-    width: 47%;
+    margin-bottom: 1em;
+    margin-right: 0;
     color: hsl(236, 13%, 42%);
+    opacity: .75;
 }
 
 #main-article-btn{
     color: white;
+    font-weight: bold;
+    font-size: .8rem;
     background-color: hsl(5, 85%, 63%);
     border: none;
     text-transform:uppercase;
-    padding: .8em 1.5em;
+    padding: 1em 2em;
     letter-spacing: .2rem;
     margin-top: 2em;
 }
@@ -93,44 +113,83 @@ flex-direction: row;
 .new-menu{
     background-color: black;
     width: 30%;
-    padding: 1.5em 2em;
+    margin-left:2em;
+    padding: 1.8em 1.5em;
    margin-top: 0;
 }
 
 .new-menu h2{
     color: hsl(35, 77%, 62%);
-    font-size:2rem;
+    font-size:2.7rem;
     margin-bottom: 1em;
+    margin-right:0px;
 }
 
 .new-article{
     text-decoration: none;
-    color: hsl(36, 100%, 99%)
+    color: hsl(36, 100%, 99%);
+    font-size: 1rem;
 }
 
 .new-p{
     color:hsl(233, 8%, 79%);
     opacity: .75;
     margin-top: 1em;
+   
 }
 
 .line{
     width: 100%;
     height: 1px;
     background-color:hsl(233, 8%, 79%);
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
     opacity: .5;
     border-radius: 25px;
 }
 
 .small-article-container{
+    margin-bottom: 3em;
+}
+
+.small-article-container, .small-article{
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.small-image{
-    width:25%;
+.small-content h3{
+ color:hsl(236, 13%, 42%);
+ opacity: .7;
+ font-size: 2rem;
 }
 
+.small-content h4{
+    margin-top: .8em;
+    margin-bottom: .8em;
+    font-size: 1.2rem;
+}
+
+.small-content h4:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.small-content p{
+    line-height:1.5em;
+    color:hsl(236, 13%, 42%);
+   opacity: .9;
+}
+
+.small-image{
+    width:28%;
+    margin-right: 1.2em;
+
+}
+
+
+@media screen and (max-width: 720px){
+    body{
+        
+    }
+}
