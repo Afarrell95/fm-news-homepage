@@ -31,6 +31,19 @@ nav{
     
 }
 
+.hamburger{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.hamburger-img{   
+   display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
@@ -198,11 +211,11 @@ flex-wrap: wrap;
    
     div{
         width:90%;
-       
     }
     .top-container{
         display: flex;
         flex-direction: column;
+        
     }
 
     .main-article,#main-article-header,.main-article-content,.new-menu{
@@ -238,8 +251,27 @@ flex-wrap: wrap;
         width: 100%;
         margin-bottom: 2em;
     }
+    .mobile-menu{
+        position: absolute;
+        right:0;
+        display: block;
+        background-color: white;
+        z-index: 5;
+        
+        width: 70%;
+        height: 100%;
+    }
+
+    .x-logo{
+        right:0;
+    }
 
     .nav-list{
         display: none;
     }
+
+    .hamburger-img{   
+        /* display: inline-block; */
+        margin-right: 0%;
+     }
 }
