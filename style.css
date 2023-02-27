@@ -124,7 +124,9 @@ flex-wrap: wrap;
 .main-article-p{
    
     color: hsl(236, 13%, 42%);
-    opacity: .75;
+    opacity: .8;
+    font-size: 1rem;
+    margin-bottom: 2em;
 }
 
 .main-article-btn{
