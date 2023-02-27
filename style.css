@@ -109,7 +109,7 @@ flex-wrap: wrap;
     margin-bottom: 1.5em;
 }
 
-#main-article-header{
+.main-article-header{
     width: 40%;
     font-size: 3.5rem;
     font-weight: bolder;
@@ -121,13 +121,13 @@ flex-wrap: wrap;
     margin-top:1em;
 }
 
-#main-article-p{
+.main-article-p{
    
     color: hsl(236, 13%, 42%);
     opacity: .75;
 }
 
-#main-article-btn{
+.main-article-btn{
     color: white;
     font-weight: bold;
     font-size: .8rem;
@@ -140,7 +140,7 @@ flex-wrap: wrap;
     
 }
 
-#main-article-btn:hover{
+.main-article-btn:hover{
     background-color: black;
     
 }
@@ -242,11 +242,11 @@ flex-wrap: wrap;
         
     }
 
-    .main-article,#main-article-header,.main-article-content,.new-menu{
+    .main-article,.main-article-header,.main-article-content,.new-menu{
         width: 100%;
     }
 
-    #main-article-header{
+    .main-article-header{
         margin-bottom: .3em;
     }
     .new-menu{
