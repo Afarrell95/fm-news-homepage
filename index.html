@@ -3,40 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>News homepage</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="overlay"></div>
-    <div class="mobile-menu">
+    <nav class="mobile-menu">
       <div class="x-logo-container">
         <svg
           class="x-logo"
@@ -57,36 +29,38 @@
         <li><a class="nav-item" href="#">Trending</a></li>
         <li><a class="nav-item" href="#">Categories</a></li>
       </ul>
-    </div>
-    <div>
-      <header>
-        <div class="nav-logo"><img src="./assets/images/logo.svg" /></div>
-        <div class="hamburger">
-          <svg
-            class="hamburger-img"
-            width="40"
-            height="17"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="#00001A" fill-rule="evenodd">
-              <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
-              <path d="M0 0h40v3H0z" />
-            </g>
-          </svg>
-        </div>
-        <nav>
-          <ul class="nav-list">
-            <li><a class="nav-item" href="#">Home</a></li>
-            <li><a class="nav-item" href="#">New</a></li>
-            <li><a class="nav-item" href="#">Popular</a></li>
-            <li><a class="nav-item" href="#">Trending</a></li>
-            <li><a class="nav-item" href="#">Categories</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="content-container">
-        <div class="top-container">
-          <div class="main-article">
+    </nav>
+    <header>
+      <div class="nav-logo">
+        <img src="./assets/images/logo.svg" alt="Logo" />
+      </div>
+      <div class="hamburger">
+        <svg
+          class="hamburger-img"
+          width="40"
+          height="17"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g fill="#00001A" fill-rule="evenodd">
+            <path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z" />
+            <path d="M0 0h40v3H0z" />
+          </g>
+        </svg>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-item" href="#">Home</a></li>
+          <li><a class="nav-item" href="#">New</a></li>
+          <li><a class="nav-item" href="#">Popular</a></li>
+          <li><a class="nav-item" href="#">Trending</a></li>
+          <li><a class="nav-item" href="#">Categories</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content-container">
+        <section class="top-container">
+          <article class="main-article">
             <img
               class="web-three-desktop"
               src="./assets/images/image-web-3-desktop.jpg"
@@ -103,23 +77,23 @@
               <p class="main-article-p">
                 We dive into the next evolution of the web that claims to put
                 the power of the platforms back into the hands of the people.
-                But is it really fufilling it's promise?
+                But is it really fulfilling its promise?
               </p>
-              <button class="main-article-btn"><span>read more</span></button>
+              <button class="main-article-btn"><span>Read more</span></button>
             </div>
-          </div>
-          <div class="new-menu">
+          </article>
+          <aside class="new-menu">
             <h2>New</h2>
-            <a class="new-article" href=""
-              ><h3>Hydrogen VS Electric Cars</h3></a
-            >
+            <a class="new-article" href="">
+              <h3>Hydrogen VS Electric Cars</h3>
+            </a>
             <p class="new-p">
-              Will hydrogen-feuled cars ever catch up to the EVs?
+              Will hydrogen-fueled cars ever catch up to the EVs?
             </p>
             <div class="line"></div>
-            <a class="new-article" href=""
-              ><h3>The Downsides of AI Artistry</h3></a
-            >
+            <a class="new-article" href="">
+              <h3>The Downsides of AI Artistry</h3>
+            </a>
             <p class="new-p">
               What are the possible adverse side effects of on-demand AI image
               generation?
@@ -130,10 +104,10 @@
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
             </p>
-          </div>
-        </div>
-        <div class="small-article-container">
-          <div class="small-article">
+          </aside>
+        </section>
+        <section class="small-article-container">
+          <article class="small-article">
             <img
               class="small-image"
               src="./assets/images/image-retro-pcs.jpg"
@@ -141,11 +115,11 @@
             />
             <div class="small-content">
               <h3>01</h3>
-              <h4>Reviving Rerto PCs</h4>
+              <h4>Reviving Retro PCs</h4>
               <p>What happens when old PCs are given modern upgrades?</p>
             </div>
-          </div>
-          <div class="small-article">
+          </article>
+          <article class="small-article">
             <img
               class="small-image"
               src="./assets/images/image-top-laptops.jpg"
@@ -156,8 +130,8 @@
               <h4>Top 10 Laptops of 2022</h4>
               <p>Our best picks for various needs and budgets.</p>
             </div>
-          </div>
-          <div class="small-article">
+          </article>
+          <article class="small-article">
             <img
               class="small-image"
               src="./assets/images/image-gaming-growth.jpg"
@@ -168,10 +142,10 @@
               <h4>The Growth of Gaming</h4>
               <p>How the pandemic has sparked fresh opportunities.</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </article>
+        </section>
+      </section>
+    </main>
     <script src="./app.js"></script>
   </body>
 </html>
